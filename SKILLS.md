@@ -6,7 +6,7 @@
 
 | Syntax               | Statements            | Functions             | Data structures     | Process & style      |
 |----------------------|-----------------------|-----------------------|---------------------|----------------------|
-| 🟦 value             | 🟦 if                 | 🟩 recursion          | 🟦 array            | 🟨 refactoring       |
+| 🟦 value             | 🟦 if                 | 🟨 recursion          | 🟦 array            | 🟨 refactoring       |
 | 🟦 identifier        | 🟦 loops              | 🟦 function           | 🟦 instance         | 🟩 code review       |
 | 🟦 variable          | 🟦 assignment         | 🟦 return             | 🟦 object           | 🟩 antipatterns      |
 | 🟦 constant          | 🟨 prototype          | 🟦 signature          | 🟦 collection       | 🟨 paradigm          |
@@ -27,7 +27,7 @@
 | 🟩 async function    | 🟩 new Error          | 🟥 memoize            | 🟨 string parsing   | 🟩 prettier          |
 | 🟩 call, bind, apply |                       | 🟦 factory            | 🟨 timers           | 🟩 unittest          |
 | 🟨 Array             |                       | 🟦 pool               | 🟨 EventEmitter     | 🟦 git               |
-| 🟩 instanceof        |                       | 🟥 wrapper            | 🟨 RegExp           | 🟦 github            |
+| 🟩 instanceof        |                       | 🟨 wrapper            | 🟨 RegExp           | 🟦 github            |
 | 🟨 ...spread         |                       | 🟨 default parameters | 🟨 global           | 🟨 node.js           |
 | 🟨 ...rest           |                       |                       | 🟨 undefined        | 🟨 npm               |
 | 🟩 typeof            |                       |                       | 🟦 null             |                      |
@@ -39,21 +39,21 @@
 | 🟨 Procedural programming      | 🟨 constructor        | 🟥 struct, record    | 🟥 Singleton             |
 | 🟨 Imperative programming      | 🟨 new                | 🟥 Mutable state     |                          |
 | 🟨 Structured programming      | 🟨 Static method      | 🟥 Immutable state   |                          |
-| 🟥 Non-structured programming  | 🟨 Method             | 🟨 Enum              |                          |
-| 🟩 Functional programming      | 🟩 Async method       | 🟨 Linked list       |                          |
+| 🟨 Non-structured programming  | 🟨 Method             | 🟨 Enum              |                          |
+| 🟩 Functional programming      | 🟨 Async method       | 🟨 Linked list       |                          |
 | 🟨 Prototype-based programming | 🟨 Getters, Setters   | 🟨 Doubly list       |                          |
 | 🟨 Object-oriented programming | 🟨 Public fields      | 🟥 Unrolled list     |                          |
 | ⬜ Object-based programming    | 🟨 Private fields     | 🟥 Circular list     |                          |
 | 🟥 Generic programming         | 🟨 Field declarations | 🟩 Trees             |                          |
-| 🟥 Concurrent computing        | 🟩 Inheritance        | 🟩 Graphs            |                          |
-| 🟩 Asyncronous programming     | 🟩 Parent class       | 🟩 Functor           |                          |
-| 🟩 Parallel programming        | 🟨 Polymorphism       | 🟩 Functional object |                          |
+| 🟥 Concurrent computing        | 🟨 Inheritance        | 🟩 Graphs            |                          |
+| 🟨 Asyncronous programming     | 🟨 Parent class       | 🟩 Functor           |                          |
+| 🟨 Parallel programming        | 🟨 Polymorphism       | 🟩 Functional object |                          |
 | 🟥 Reactive programming        | 🟨 Abstract class     | 🟥 Monad             |                          |
 | 🟥 FRP (Functional-reactive)   | 🟨 Interface          | 🟩 Generator         |                          |
 | 🟥 Automata-based programming  | 🟨 Encapsulation      | 🟩 Iterator          |                          |
 | 🟥 Domain-specific languages   | 🟥 Hidden class       | 🟥 Async Iterator    |                          |
 | 🟥 Multi-paradigm programming  | 🟥 Object form        |                      |                          |
-| 🟥 Metaprogramming             | 🟩 instance           |                      |                          |
+| 🟥 Metaprogramming             | 🟨 instance           |                      |                          |
 | 🟥 Actor model                 | 🟥 Introspection      |                      |                          |
 |                                | 🟥 Reflection         |                      |                          |
 
@@ -67,8 +67,8 @@
 | 🟨 Async function      | 🟩 AbortController             | 🟨 Non-blocking     | 🟥 Sequential async      |
 | 🟨 await               | 🟥 Promise unhandled rejection | 🟩 Async I/O        | 🟥 Parallel async        |
 | 🟨 Generator           | 🟥 Promise double resolve      | 🟩 Pattern Reactor  | 🟩 Promise.all           |
-| 🟥 Async Generator     | 🟩 child_process               | 🟥 CAS operations   | 🟩 Promise.allSettled    |
-| 🟥 Async Iterator      | 🟩 worker_threads              | ⬜ epoll            | 🟩 Promise.race          |
+| 🟥 Async Generator     | 🟨 child_process               | 🟥 CAS operations   | 🟩 Promise.allSettled    |
+| 🟥 Async Iterator      | 🟨 worker_threads              | ⬜ epoll            | 🟩 Promise.race          |
 | 🟨 Thenable            | 🟥 Atomics                     | ⬜ kqueue           | 🟩 Promise.any           |
 | 🟨 EventEmitter        | 🟥 Blockeing operations        | 🟥 Completion ports | 🟥 Web Locks API         |
 | 🟥 Cancelable callback | 🟥 Non-blocking loop for Array | 🟥 Event ports      | 🟥 Async Pool            |
@@ -93,19 +93,19 @@
 | ⬜ Addons            | 🟨 Inversion of control      | ⬜ SSE            | 🟨 Transform     | 🟩 Dependencies      |
 | ⬜ N-API             | 🟨 Dependency injection      | ⬜ HTTP/3 (QUIC)  | ⬜ back pressure |                      |
 | ⬜ Webassembly       | 🟥 GRASP for JS and Node.js  | ⬜ Long polling   | 🟨 Buffer        |                      |
-| 🟨 npm               | 🟩 SOLID for JS and Node.js  | 🟨 REST           | 🟨 Console       |                      |
-| 🟨 node_modules      | 🟥 GoF for JS and Node.js    | 🟥 RPC            | 🟨 Inspector     |                      |
+| 🟨 npm               | 🟨 SOLID for JS and Node.js  | 🟨 REST           | 🟨 Console       |                      |
+| 🟨 node_modules      | 🟥 GoF for JS and Node.js    | 🟨 RPC            | 🟨 Inspector     |                      |
 | 🟨 package.json      | ⬜ Distributed systems       | 🟨 Routing        | 🟥 Reliability   |                      |
 | 🟩 vm isolation      | 🟥 Highload applications     | 🟥 IP sticky      | 🟥 Quality       |                      |
 | 🟨 command line args | 🟩 DDD                       | 🟥 DoS            | 🟥 Availability  |                      |
 | 🟩 Node.js CLI       | 🟩 Clean architecture        | 🟥 DDoS           | 🟥 Flexibility   |                      |
-| 🟩 Streams           | 🟥 Domain in the middle      | 🟥 XSS            |                  |                      |
-| 🟩 Clustering        | 🟥 Message Queue             | 🟥 Path traversal |                  |                      |
+| 🟨 Streams           | 🟥 Domain in the middle      | 🟥 XSS            |                  |                      |
+| 🟨 Clustering        | 🟥 Message Queue             | 🟥 Path traversal |                  |                      |
 | ⬜ Load balancing    | 🟥 Transport-agnostic server | 🟥 CSRF           |                  |                      |
 | ⬜ Serverless clouds | 🟨 Framework-agnostic app    | 🟥 DNS            |                  |                      |
 | ⬜ FaaS clouds       | 🟨 Interactive applications  | 🟩 Fetch          |                  |                      |
 | 🟨 Debugging node.js | 🟩 Real-time applications    | 🟥 zlib           |                  |                      |
 | 🟩 crypto            | 🟥 CQS and CQRS              |                   |                  |                      |
 | ⬜ SharedArrayBuffer | 🟥 Event Sourcing            |                   |                  |                      |
-| 🟩 child_process     | 🟥 Shared memory             |                   |                  |                      |
-| 🟩 worker_threads    |                              |                   |                  |                      |
+| 🟩 child_process     | 🟨 Shared memory             |                   |                  |                      |
+| 🟨 worker_threads    |                              |                   |                  |                      |
